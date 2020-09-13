@@ -12,6 +12,7 @@ import SALogo from './media/AWS-SolArchitect-Associate.png';
 import CPLogo from './media/AWS-CloudPractitioner.png';
 import GITLogo from './media/GIT_201.png';
 import IBMDSLogo from './media/Applied_Data_Science_Capstone.png';
+import GTLogo from './media/gt-logo.svg';
 function App() {
   return (
     <div className="App">
@@ -66,6 +67,18 @@ function App() {
           <hr/>
           <Section title="Education">
           <SectionItem 
+              logo={GTLogo}
+              company="Georgia Tech" 
+              companyurl="https://www.gatech.edu/"
+              title="Masters of Science in Computer Science" 
+              location="Atlanta"
+              startdate="January 2021"
+              enddate="December 2023"
+              >
+              <b>Specialization in Machine Learning</b>
+              <br/>
+              </SectionItem>
+          <SectionItem 
               logo={TAMULogo}
               company="Texas A&M University" 
               companyurl="https://www.tamu.edu/"
@@ -74,7 +87,7 @@ function App() {
               startdate="August 2014"
               enddate="May 2018"
               >
-              <p>Minor in Mathematics and Astrophysics</p>
+              <b>Minor in Mathematics and Astrophysics</b>
               <br/>
               </SectionItem>
           </Section>
