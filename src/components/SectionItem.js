@@ -5,7 +5,6 @@ export default function SectionItem(props){
     
     return(
         <Container className="section-item-container" fluid>
-            <img src={props.logo} alt="No logo added" className="section-item-logo"></img>
             <div className="section-item-information">
                 <div className="section-item-header">
                 <p className="section-item-title">{props.title}</p>

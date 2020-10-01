@@ -18,10 +18,10 @@ function App() {
     <div className="App">
       <Navigation/>
       <Container id="maincontainer" fluid>
-        <Section title="Welcome to my Cloud Resume!">
+        <Section title="">
           <div className="introduction">
-            <p>Howdy. This is my portfolio website built with React and hosted on AWS.  I am learning how AWS works by completing their certificates in order to build scalable systems. I've cleared the Cloud Practictioner and Solutions Architect Associate Certificates and am working on Systems Adminsitrations Associate next. At my day job, I write automated test cases and automate manual tasks using Python. </p>
-            <p>Outside of work, I love listening to music, going on walks with my dog, weight lifting and video games.</p>
+            <p>Howdy. This is my portfolio website built with React and hosted on AWS.  This website uses github and AWS Amplify as a continuous deployment pipeline. I've cleared the Cloud Practictioner and Solutions Architect Associate Certificates and am working on Systems Adminsitrations Associate next. At my day job, I write automated test cases and automate manual tasks using Python. </p>
+            <p>Outside of work, I love listening to music, going on walks with my dog, weight lifting and video games. I will also be enrolled at Georgia Tech's Online Masters of Science in Computer Science program January 2021.</p>
             <p>Feel free to send me an email: <b>huynhnavie@gmail.com</b></p>
           </div>
         </Section>
@@ -44,7 +44,7 @@ function App() {
                 <li>Troubleshoot software upgrade related issues and other device issues via device application and os logs</li>
                 <li>Execute manual test cases for various SDLC stages, including unit, smoke, sanity, regression, integration etc.</li>
               </ul>
-              <br/>
+              
               </SectionItem>
 
             <SectionItem 
@@ -61,8 +61,27 @@ function App() {
                 <li>Provide weekly math lessons and assignments to measure student performance</li>
                 <li>Help students learn how to create sustainable study schedule</li>
               </ul>
-              <br/>
+              
               </SectionItem>
+          </Section>
+          <hr/>
+          <Section title="Projects">
+            <SectionItem
+              company="https://navie.info"
+              companyurl="https://navie.info"
+              title="Portfolio Website"
+              enddate="September 2020"
+            >
+              <p>This portfolio website was designed using React for front end, React-bootstrap for styling, github for source control, AWS Amplify for CI/CD pipeline and Route53 for DNS Registry and hosting.</p>
+            </SectionItem>
+            <SectionItem
+              company="Github Repo"
+              companyurl="https://github.com/NavieHuynh/Coursera_Capstone/blob/master/DallasMarketAnalysis.ipynb"
+              title="Dallas Market Cluster Analysis - IBM Data Science Capstone Project "
+              enddate="January 2020"
+            >
+            <p>This was the capstone project for IBM's <a href="https://www.coursera.org/professional-certificates/ibm-data-science">Data Science Professional Certificate</a> program for tying together data science techniques from previous courses into a practical example. </p>
+            </SectionItem>
           </Section>
           <hr/>
           <Section title="Education">
@@ -71,12 +90,12 @@ function App() {
               company="Georgia Tech" 
               companyurl="https://www.gatech.edu/"
               title="Masters of Science in Computer Science" 
-              location="Atlanta"
+              location="Atlanta, GA"
               startdate="January 2021"
               enddate="December 2023"
               >
-              <b>Specialization in Machine Learning</b>
-              <br/>
+              <p>Specialization in Machine Learning and Intelligent Interactions</p>
+              
               </SectionItem>
           <SectionItem 
               logo={TAMULogo}
@@ -87,8 +106,8 @@ function App() {
               startdate="August 2014"
               enddate="May 2018"
               >
-              <b>Minor in Mathematics and Astrophysics</b>
-              <br/>
+              <p>Minor in Mathematics and Astrophysics</p>
+              
               </SectionItem>
           </Section>
           <hr/>
@@ -96,23 +115,39 @@ function App() {
           <SectionItem 
               logo={SALogo}
               company="Amazon Web Services" 
-              companyurl="https://www.youracclaim.com/earner/earned/badge/a21f90cf-e417-4354-bc2c-95ad2974e6ea"
+              companyurl="http://aws.amazon.com/verification"
+              title="AWS Certified Sysops Administrator Associate" 
+              location="Validation Number: 2Q40WQ4L1FR116GH"
+              startdate="September 2020"
+              enddate="September 2023"
+              >
+                <p>Earners of this certification have a comprehensive understanding on how to deploy, manage, and operate IT systems on the AWS Cloud. They demonstrated the ability to migrate on-premises workloads to AWS and monitor, scale, and secure systems on the AWS platform. Badge owners are able to provide guidance on implementing best practices for cloud operations.</p>
+              
+              </SectionItem>
+          <SectionItem 
+              logo={SALogo}
+              company="Amazon Web Services" 
+              companyurl="http://aws.amazon.com/verification"
               title="AWS Certified Solutions Architect Associate" 
-              enddate="July 2020"
+              location="Validation Number: D1NEW5N2NJBQ1PCJ"
+              startdate="July 2020"
+              enddate="July 2023"
               >
                 <p>Earners of this certification have a comprehensive understanding of AWS services and technologies. They demonstrated the ability to build secure and robust solutions using architectural design principles based on customer requirements. Badge owners are able to strategically design well-architected distributed systems that are scalable, resilient, efficient, and fault-tolerant.</p>
-              <br/>
+              
               </SectionItem>
 
           <SectionItem 
               logo={CPLogo}
               company="Amazon Web Services" 
-              companyurl="https://www.youracclaim.com/earner/earned/badge/af3e2d65-83a5-4b48-be7a-d038af60d039"
+              companyurl="http://aws.amazon.com/verification"
               title="AWS Certified - Cloud Practioner" 
-              enddate="March 2020"
+              location="Validation Number: FNZDC0Y2M2RE1Z5H"
+              startdate="March 2020"
+              enddate= "September 2023"
               >
               <p>Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.</p>
-              <br/>
+              
               </SectionItem>
           </Section>
           <hr/>
@@ -125,7 +160,7 @@ function App() {
               enddate="June 2020"
               >
               <p>This six-course certificate, developed by Google, is designed to provide IT professionals with in-demand skills -- including Python, Git, and IT automation -- that can help them advance their careers. The hands-on curriculum is designed to teach learners how to write code in Python, with a special focus on how this applies to automating tasks in the world of IT support and systems administration.</p>
-              <br/>
+              
               </SectionItem>
           <SectionItem 
               logo={IBMDSLogo}
@@ -135,9 +170,10 @@ function App() {
               enddate="January 2020"
               >
               <p>The badge earner has demonstrated proficiency in applying Data Science and some Machine Learning concepts including identifying and clearly defining a problem that can be solved using location data, working with and making calls to APIs, and using location data to solve the problem defined. The individual has also demonstrated proficiency in documenting their work and preparing a full formal data science project report.</p>
-              <br/>
+              
               </SectionItem>
           </Section>
+        
       </Container>
     </div>
   );
